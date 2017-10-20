@@ -7,21 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841A35DB1F86C81400E5DB5D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A35DA1F86C81400E5DB5D /* Settings.swift */; };
+		841A35DF1F87479A00E5DB5D /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A35DE1F87479A00E5DB5D /* House.swift */; };
+		841A35E11F8747A700E5DB5D /* Execution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A35E01F8747A700E5DB5D /* Execution.swift */; };
+		841A35E31F8747BD00E5DB5D /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A35E21F8747BD00E5DB5D /* Simulation.swift */; };
+		841A35E91F88934E00E5DB5D /* SimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A35E81F88934E00E5DB5D /* SimulationViewController.swift */; };
+		841A35EB1F88AD0A00E5DB5D /* ExecutionSettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A35EA1F88AD0A00E5DB5D /* ExecutionSettingsTableViewCell.swift */; };
+		841A35ED1F8975C100E5DB5D /* ExecutionSettingsLoopsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A35EC1F8975C100E5DB5D /* ExecutionSettingsLoopsTableViewCell.swift */; };
+		841A35EF1F89966C00E5DB5D /* VarText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A35EE1F89966C00E5DB5D /* VarText.swift */; };
+		841A35F31F89C02D00E5DB5D /* HouseSettingsNumbersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A35F21F89C02D00E5DB5D /* HouseSettingsNumbersTableViewCell.swift */; };
+		841A35F51F89C04E00E5DB5D /* HouseSettingsSwitchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A35F41F89C04E00E5DB5D /* HouseSettingsSwitchesTableViewCell.swift */; };
+		841A35FB1F8A0A5800E5DB5D /* SimulateLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A35FA1F8A0A5800E5DB5D /* SimulateLoop.swift */; };
+		96C518C7BA8AE1470E42B263 /* Pods_BlackjackSimulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB29C9DE6AD97A40A7EEB1B /* Pods_BlackjackSimulator.framework */; };
+		EC3F56411F8E57FD00813DE8 /* FileManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3F56401F8E57FD00813DE8 /* FileManagerViewController.swift */; };
+		EC3F56431F8E581400813DE8 /* FileManagerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3F56421F8E581400813DE8 /* FileManagerTableViewCell.swift */; };
+		EC65625E1F8BACA30023D669 /* LaunchScreen 13-59-07-215.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC65625C1F8BACA30023D669 /* LaunchScreen 13-59-07-215.storyboard */; };
+		EC6633EB1F8B59C300230941 /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6633EA1F8B59C300230941 /* HouseViewController.swift */; };
+		EC6633ED1F8B644E00230941 /* Commas.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6633EC1F8B644E00230941 /* Commas.swift */; };
+		EC6633EF1F8B676F00230941 /* Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6633EE1F8B676F00230941 /* Rounded.swift */; };
 		ECC3A2601F824022009DD250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC3A25F1F824022009DD250 /* AppDelegate.swift */; };
-		ECC3A2621F824022009DD250 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC3A2611F824022009DD250 /* ViewController.swift */; };
 		ECC3A2651F824022009DD250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC3A2631F824022009DD250 /* Main.storyboard */; };
 		ECC3A2671F824022009DD250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC3A2661F824022009DD250 /* Assets.xcassets */; };
-		ECC3A26A1F824022009DD250 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC3A2681F824022009DD250 /* LaunchScreen.storyboard */; };
+		ECEED7EC1F84CAEB001A8DCB /* PlayerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED7EB1F84CAEB001A8DCB /* PlayerCollectionViewController.swift */; };
+		ECEED7F51F84F94C001A8DCB /* PlayerStratCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED7F41F84F94C001A8DCB /* PlayerStratCollectionViewCell.swift */; };
+		ECEED7F71F8504D1001A8DCB /* PlayerCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED7F61F8504D1001A8DCB /* PlayerCellViewController.swift */; };
+		ECEED7FA1F85167D001A8DCB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED7F91F85167D001A8DCB /* Colors.swift */; };
+		ECEED7FD1F851981001A8DCB /* Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED7FC1F851981001A8DCB /* Hex.swift */; };
+		ECEED8001F852837001A8DCB /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED7FF1F852837001A8DCB /* Player.swift */; };
+		ECFF5B691F83993E003B2501 /* ExecutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFF5B681F83993E003B2501 /* ExecutionViewController.swift */; };
+		ECFF5B701F83D66C003B2501 /* ResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFF5B6F1F83D66C003B2501 /* ResultsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3DF482534D19094D4D883903 /* Pods-BlackjackSimulator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackjackSimulator.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlackjackSimulator/Pods-BlackjackSimulator.release.xcconfig"; sourceTree = "<group>"; };
+		6AB29C9DE6AD97A40A7EEB1B /* Pods_BlackjackSimulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackjackSimulator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		841A35DA1F86C81400E5DB5D /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		841A35DE1F87479A00E5DB5D /* House.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		841A35E01F8747A700E5DB5D /* Execution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Execution.swift; sourceTree = "<group>"; };
+		841A35E21F8747BD00E5DB5D /* Simulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
+		841A35E81F88934E00E5DB5D /* SimulationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationViewController.swift; sourceTree = "<group>"; };
+		841A35EA1F88AD0A00E5DB5D /* ExecutionSettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExecutionSettingsTableViewCell.swift; sourceTree = "<group>"; };
+		841A35EC1F8975C100E5DB5D /* ExecutionSettingsLoopsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExecutionSettingsLoopsTableViewCell.swift; sourceTree = "<group>"; };
+		841A35EE1F89966C00E5DB5D /* VarText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VarText.swift; sourceTree = "<group>"; };
+		841A35F21F89C02D00E5DB5D /* HouseSettingsNumbersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseSettingsNumbersTableViewCell.swift; sourceTree = "<group>"; };
+		841A35F41F89C04E00E5DB5D /* HouseSettingsSwitchesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseSettingsSwitchesTableViewCell.swift; sourceTree = "<group>"; };
+		841A35FA1F8A0A5800E5DB5D /* SimulateLoop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulateLoop.swift; sourceTree = "<group>"; };
+		D0898B1B3545AE222A389052 /* Pods-BlackjackSimulator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackjackSimulator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlackjackSimulator/Pods-BlackjackSimulator.debug.xcconfig"; sourceTree = "<group>"; };
+		EC3F56401F8E57FD00813DE8 /* FileManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManagerViewController.swift; sourceTree = "<group>"; };
+		EC3F56421F8E581400813DE8 /* FileManagerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManagerTableViewCell.swift; sourceTree = "<group>"; };
+		EC65625D1F8BACA30023D669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/LaunchScreen 13-59-07-215.storyboard"; sourceTree = "<group>"; };
+		EC6633EA1F8B59C300230941 /* HouseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
+		EC6633EC1F8B644E00230941 /* Commas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commas.swift; sourceTree = "<group>"; };
+		EC6633EE1F8B676F00230941 /* Rounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rounded.swift; sourceTree = "<group>"; };
 		ECC3A25C1F824022009DD250 /* BlackjackSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackjackSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC3A25F1F824022009DD250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ECC3A2611F824022009DD250 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ECC3A2641F824022009DD250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECC3A2661F824022009DD250 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ECC3A2691F824022009DD250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECC3A26B1F824022009DD250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECEED7EB1F84CAEB001A8DCB /* PlayerCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCollectionViewController.swift; sourceTree = "<group>"; };
+		ECEED7F41F84F94C001A8DCB /* PlayerStratCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerStratCollectionViewCell.swift; sourceTree = "<group>"; };
+		ECEED7F61F8504D1001A8DCB /* PlayerCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCellViewController.swift; sourceTree = "<group>"; };
+		ECEED7F91F85167D001A8DCB /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		ECEED7FC1F851981001A8DCB /* Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hex.swift; sourceTree = "<group>"; };
+		ECEED7FF1F852837001A8DCB /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		ECFF5B681F83993E003B2501 /* ExecutionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExecutionViewController.swift; sourceTree = "<group>"; };
+		ECFF5B6F1F83D66C003B2501 /* ResultsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +79,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C518C7BA8AE1470E42B263 /* Pods_BlackjackSimulator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60A28C825576EFA5670A6B45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0898B1B3545AE222A389052 /* Pods-BlackjackSimulator.debug.xcconfig */,
+				3DF482534D19094D4D883903 /* Pods-BlackjackSimulator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC6562591F8BAB580023D669 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EC65625C1F8BACA30023D669 /* LaunchScreen 13-59-07-215.storyboard */,
+				ECC3A25F1F824022009DD250 /* AppDelegate.swift */,
+				ECC3A2661F824022009DD250 /* Assets.xcassets */,
+				ECC3A26B1F824022009DD250 /* Info.plist */,
+				ECC3A2631F824022009DD250 /* Main.storyboard */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		ECC3A2531F824022009DD250 = {
 			isa = PBXGroup;
 			children = (
 				ECC3A25E1F824022009DD250 /* BlackjackSimulator */,
 				ECC3A25D1F824022009DD250 /* Products */,
+				60A28C825576EFA5670A6B45 /* Pods */,
+				EED7EB041CC25FA4E344636F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +128,81 @@
 		ECC3A25E1F824022009DD250 /* BlackjackSimulator */ = {
 			isa = PBXGroup;
 			children = (
-				ECC3A25F1F824022009DD250 /* AppDelegate.swift */,
-				ECC3A2611F824022009DD250 /* ViewController.swift */,
-				ECC3A2631F824022009DD250 /* Main.storyboard */,
-				ECC3A2661F824022009DD250 /* Assets.xcassets */,
-				ECC3A2681F824022009DD250 /* LaunchScreen.storyboard */,
-				ECC3A26B1F824022009DD250 /* Info.plist */,
+				EC6562591F8BAB580023D669 /* Main */,
+				ECEED7FE1F852825001A8DCB /* Models */,
+				ECEED7FB1F851974001A8DCB /* Extensions */,
+				ECEED7F81F851668001A8DCB /* Constants */,
+				ECFF5B6E1F83D656003B2501 /* CellControllers */,
+				ECC3A2751F827A6E009DD250 /* ViewControllers */,
 			);
 			path = BlackjackSimulator;
+			sourceTree = "<group>";
+		};
+		ECC3A2751F827A6E009DD250 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC6633EA1F8B59C300230941 /* HouseViewController.swift */,
+				ECFF5B681F83993E003B2501 /* ExecutionViewController.swift */,
+				ECEED7EB1F84CAEB001A8DCB /* PlayerCollectionViewController.swift */,
+				841A35E81F88934E00E5DB5D /* SimulationViewController.swift */,
+				EC3F56401F8E57FD00813DE8 /* FileManagerViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ECEED7F81F851668001A8DCB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				ECEED7F91F85167D001A8DCB /* Colors.swift */,
+				841A35EE1F89966C00E5DB5D /* VarText.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		ECEED7FB1F851974001A8DCB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ECEED7FC1F851981001A8DCB /* Hex.swift */,
+				841A35FA1F8A0A5800E5DB5D /* SimulateLoop.swift */,
+				EC6633EC1F8B644E00230941 /* Commas.swift */,
+				EC6633EE1F8B676F00230941 /* Rounded.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		ECEED7FE1F852825001A8DCB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ECEED7FF1F852837001A8DCB /* Player.swift */,
+				841A35DA1F86C81400E5DB5D /* Settings.swift */,
+				841A35DE1F87479A00E5DB5D /* House.swift */,
+				841A35E01F8747A700E5DB5D /* Execution.swift */,
+				841A35E21F8747BD00E5DB5D /* Simulation.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		ECFF5B6E1F83D656003B2501 /* CellControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ECFF5B6F1F83D66C003B2501 /* ResultsTableViewCell.swift */,
+				ECEED7F41F84F94C001A8DCB /* PlayerStratCollectionViewCell.swift */,
+				ECEED7F61F8504D1001A8DCB /* PlayerCellViewController.swift */,
+				841A35EA1F88AD0A00E5DB5D /* ExecutionSettingsTableViewCell.swift */,
+				841A35EC1F8975C100E5DB5D /* ExecutionSettingsLoopsTableViewCell.swift */,
+				841A35F21F89C02D00E5DB5D /* HouseSettingsNumbersTableViewCell.swift */,
+				841A35F41F89C04E00E5DB5D /* HouseSettingsSwitchesTableViewCell.swift */,
+				EC3F56421F8E581400813DE8 /* FileManagerTableViewCell.swift */,
+			);
+			name = CellControllers;
+			sourceTree = "<group>";
+		};
+		EED7EB041CC25FA4E344636F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AB29C9DE6AD97A40A7EEB1B /* Pods_BlackjackSimulator.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECC3A26E1F824022009DD250 /* Build configuration list for PBXNativeTarget "BlackjackSimulator" */;
 			buildPhases = (
+				BFC85AE8F5701F53D076AC4C /* [CP] Check Pods Manifest.lock */,
 				ECC3A2581F824022009DD250 /* Sources */,
 				ECC3A2591F824022009DD250 /* Frameworks */,
 				ECC3A25A1F824022009DD250 /* Resources */,
+				D27DC4BBD9EB5894E6F310FC /* [CP] Embed Pods Frameworks */,
+				30E3EBB699D21A281C5D5060 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +240,7 @@
 				TargetAttributes = {
 					ECC3A25B1F824022009DD250 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = F8566JL9RW;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,41 +268,120 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECC3A26A1F824022009DD250 /* LaunchScreen.storyboard in Resources */,
 				ECC3A2671F824022009DD250 /* Assets.xcassets in Resources */,
 				ECC3A2651F824022009DD250 /* Main.storyboard in Resources */,
+				EC65625E1F8BACA30023D669 /* LaunchScreen 13-59-07-215.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30E3EBB699D21A281C5D5060 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlackjackSimulator/Pods-BlackjackSimulator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFC85AE8F5701F53D076AC4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlackjackSimulator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D27DC4BBD9EB5894E6F310FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BlackjackSimulator/Pods-BlackjackSimulator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlackjackSimulator/Pods-BlackjackSimulator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ECC3A2581F824022009DD250 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECC3A2621F824022009DD250 /* ViewController.swift in Sources */,
+				ECEED7EC1F84CAEB001A8DCB /* PlayerCollectionViewController.swift in Sources */,
+				EC6633ED1F8B644E00230941 /* Commas.swift in Sources */,
+				ECEED7FA1F85167D001A8DCB /* Colors.swift in Sources */,
+				841A35E11F8747A700E5DB5D /* Execution.swift in Sources */,
+				841A35E91F88934E00E5DB5D /* SimulationViewController.swift in Sources */,
+				841A35E31F8747BD00E5DB5D /* Simulation.swift in Sources */,
+				ECEED7F71F8504D1001A8DCB /* PlayerCellViewController.swift in Sources */,
+				841A35EB1F88AD0A00E5DB5D /* ExecutionSettingsTableViewCell.swift in Sources */,
+				EC3F56431F8E581400813DE8 /* FileManagerTableViewCell.swift in Sources */,
+				841A35EF1F89966C00E5DB5D /* VarText.swift in Sources */,
 				ECC3A2601F824022009DD250 /* AppDelegate.swift in Sources */,
+				841A35F31F89C02D00E5DB5D /* HouseSettingsNumbersTableViewCell.swift in Sources */,
+				EC6633EB1F8B59C300230941 /* HouseViewController.swift in Sources */,
+				EC3F56411F8E57FD00813DE8 /* FileManagerViewController.swift in Sources */,
+				ECFF5B701F83D66C003B2501 /* ResultsTableViewCell.swift in Sources */,
+				ECEED7FD1F851981001A8DCB /* Hex.swift in Sources */,
+				ECFF5B691F83993E003B2501 /* ExecutionViewController.swift in Sources */,
+				ECEED8001F852837001A8DCB /* Player.swift in Sources */,
+				EC6633EF1F8B676F00230941 /* Rounded.swift in Sources */,
+				841A35DB1F86C81400E5DB5D /* Settings.swift in Sources */,
+				841A35FB1F8A0A5800E5DB5D /* SimulateLoop.swift in Sources */,
+				841A35F51F89C04E00E5DB5D /* HouseSettingsSwitchesTableViewCell.swift in Sources */,
+				841A35ED1F8975C100E5DB5D /* ExecutionSettingsLoopsTableViewCell.swift in Sources */,
+				841A35DF1F87479A00E5DB5D /* House.swift in Sources */,
+				ECEED7F51F84F94C001A8DCB /* PlayerStratCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		EC65625C1F8BACA30023D669 /* LaunchScreen 13-59-07-215.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC65625D1F8BACA30023D669 /* Base */,
+			);
+			name = "LaunchScreen 13-59-07-215.storyboard";
+			sourceTree = "<group>";
+		};
 		ECC3A2631F824022009DD250 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				ECC3A2641F824022009DD250 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		ECC3A2681F824022009DD250 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ECC3A2691F824022009DD250 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -260,9 +484,12 @@
 		};
 		ECC3A26F1F824022009DD250 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0898B1B3545AE222A389052 /* Pods-BlackjackSimulator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F8566JL9RW;
 				INFOPLIST_FILE = BlackjackSimulator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = businesstraining.BlackjackSimulator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,9 +499,12 @@
 		};
 		ECC3A2701F824022009DD250 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DF482534D19094D4D883903 /* Pods-BlackjackSimulator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F8566JL9RW;
 				INFOPLIST_FILE = BlackjackSimulator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = businesstraining.BlackjackSimulator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -301,6 +531,7 @@
 				ECC3A2701F824022009DD250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

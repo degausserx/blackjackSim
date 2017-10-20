@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BlackjackSimulator/Player.swift"
+            timestampString = "529405616.945644"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "Player"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BlackjackSimulator.Player.init () -&gt; BlackjackSimulator.Player"
+                  moduleName = "BlackjackSimulator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/etudiant/Desktop/blackjacksim_current/BlackjackSimulator/BlackjackSimulator/Player.swift"
+                  timestampString = "529405618.962996"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BlackjackSimulator.Player.(basic in _DD50121EC18A7AA895DE38DC018DF9D9).getter : Swift.Dictionary&lt;Swift.String, Swift.Dictionary&lt;Swift.Int, Swift.String&gt;&gt;"
+                  moduleName = "BlackjackSimulator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/etudiant/Desktop/blackjacksim_current/BlackjackSimulator/BlackjackSimulator/Player.swift"
+                  timestampString = "529405618.96667"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BlackjackSimulator.Player.(basic in _DD50121EC18A7AA895DE38DC018DF9D9).setter : Swift.Dictionary&lt;Swift.String, Swift.Dictionary&lt;Swift.Int, Swift.String&gt;&gt;"
+                  moduleName = "BlackjackSimulator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/etudiant/Desktop/blackjacksim_current/BlackjackSimulator/BlackjackSimulator/Player.swift"
+                  timestampString = "529405618.970221"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "50">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
