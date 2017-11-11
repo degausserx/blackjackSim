@@ -130,51 +130,48 @@ extension Simulation {
     
     func playerSimulate(player: Int, dealer: Int, dealerFinish: Int, split: Int, entry: Bool) -> Int {
         var newCard: Int = 0, hit: Int = 0, cards: Int = (entry) ? 0 : 1, playerHand: Int = player, dealerHand = dealerFinish, splitHand: Int = split
-        var blackjack: Bool = false, doubleBet: Bool = false, pair: Bool = false, soft: Bool = false
-        var allowSplit: Bool = true, looping = true, noCards = false
+        var blackjack: Bool = false, doubleBet: Bool = false, pair: Bool, soft: Bool = false
+        var allowSplit: Bool = true, looping = true
         var playerString: String, strat: String = "", tempNum: Int = 0
         
         // simulation loop
         while (looping) {
             looping = false
+            pair = false // *fixed
             
-            if (cards < 2) {
-                newCard = (splitHand < 1 && self.player1 != 1) ? self.player1 : drawCard()
+            newCard = (splitHand < 1 && self.player1 != 1) ? self.player1 : drawCard()
+            cards += 1
+            if (cards == 1) {
+                playerHand = (splitHand < 1 && self.player2 != 1) ? self.player2 : drawCard()
                 cards += 1
-                if (cards == 1) {
-                    playerHand = (splitHand < 1 && self.player2 != 1) ? self.player2 : drawCard()
-                    cards += 1
+            }
+            if (playerHand == 11 || newCard == 11) {
+                soft = true
+            }
+            if (playerHand == newCard) {
+                pair = true
+                if (playerHand == 11 && splitHand > 0 && !self.resplitaces) || (splitHand >= self.maxsplits && self.maxsplits != 0) {
+                    allowSplit = false
                 }
-                if (playerHand == 11 || newCard == 11) {
-                    soft = true
-                }
-                if (playerHand == newCard) {
-                    pair = true
-                    if (playerHand == 11 && splitHand > 0 && !self.resplitaces) || (splitHand >= self.maxsplits && self.maxsplits != 0) {
-                        allowSplit = false
-                    }
-                }
-                newCard += playerHand;
-                if (newCard == 21) {
-                    if (splitHand == 0 || !self.splitacesnobjs) {
-                        blackjack = true
-                    }
-                    break
-                }
-                if (player == 11 && splitHand > 0 && self.splitacesone) {
-                    noCards = true
-                    if (newCard != 22) {
-                        break
-                    }
-                }
-                if (newCard == 22) {
-                    newCard -= 10
+            }
+            newCard += playerHand;
+            if (newCard == 21) {
+                if (splitHand == 0 || !self.splitacesnobjs) {
+                    blackjack = true
                 }
                 playerHand = newCard
+                break
             }
-            
-            if (!blackjack) {
-                if (self.holecard && dealerFinish == 35 && !self.surrender) {
+            if (playerHand == 11 && splitHand > 0 && self.splitacesone) {
+                if (newCard != 22 || (newCard == 22 && !allowSplit)) { // *fixed
+                    playerHand = (newCard == 22) ? 12 : newCard // *fixed
+                    break
+                }
+            }
+            playerHand = (newCard == 22) ? 12 : newCard // *fixed
+
+            if (!blackjack) { // *fixed
+                if (self.holecard && dealerFinish == 35 && (!self.surrender || (self.surrender && !self.surrenderearly))) {
                     break
                 }
                 while (playerHand < 21) {
@@ -194,33 +191,28 @@ extension Simulation {
                             playerString = "\(tempNum)\(tempNum)"
                         }
                     }
+                    // forgot option of non-splittable AA vs N, as '12' is not soft. Using A2 strategy for this case
                     else if (soft) {
-                        playerString = (playerHand == 12) ? "12" : "A\(playerHand - 11)"
+                        playerString = (playerHand == 12) ? "AAA" : "A\(playerHand - 11)" // *fixed
                     }
                     else {
                         playerString = String(playerHand)
                     }
                     
                     // make a call for the strategy. 'dealer' is an int
-                    strat = self.strat[playerString]![dealer]!
-                    
-                    // didn't surrender, can't draw cards...
-                    if (noCards && strat != "S") {
-                        break
-                    }
-                    
-                    // if the move is "surrender" or "surrender, otherwise stand"
+                    strat = (playerString != "AAA") ? self.strat[playerString]![dealer]! : "H"
+
+                    // if the move is "surrender" or "surrender, otherwise stand" *fixed
                     if (strat == "A" || strat == "B") {
-                        if ((cards > 2 || !self.surrender || splitHand > 0 || (!self.surrendervsace && dealer == 11)
-                                || (!self.surrenderearly && self.holecard && dealerHand == 35))) {
+                        if (cards == 2 && self.surrender && splitHand == 0 && (self.surrendervsace || dealer != 11)) {
+                            playerHand = -5
+                            break
+                        }
+                        else {
                             if (strat == "B") {
                                 break
                             }
                             hit = 1
-                        }
-                        else {
-                            playerHand = -5
-                            break
                         }
                     }
                         
@@ -244,12 +236,19 @@ extension Simulation {
                         break
                     }
                         
-                    // double the bet
+                    // double the bet *fixed
                     if (strat == "D" || strat == "E") {
-                        if (soft && !self.doubleonsoft && strat == "E") {
-                            break
+                        if ((soft && !self.doubleonsoft) || cards > 2 || (splitHand > 0 && playerHand == 12 && soft)) {
+                            if (strat == "E") {
+                                break
+                            }
+                            else {
+                                hit = 1;
+                            }
                         }
-                        hit = 2
+                        else {
+                            hit = 2
+                        }
                     }
                         
                     // if the move is taking a card
@@ -277,14 +276,14 @@ extension Simulation {
                         cards += 1
                         hit = 0
                     }
-                        
+                    if (doubleBet) {
+                        break
+                    }
                 }
-                    
             }
-        
-            pair = false
+            
         }
-        
+
         // bust corrections
         if (blackjack) {
             playerHand = 35
